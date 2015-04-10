@@ -1,31 +1,33 @@
 express = require 'express'
+bodyParser = require 'body-parser'
+methodOverride = require 'method-override'
+errorHandler = require 'errorhandler'
+connectAssets = require 'connect-assets'
 
 app = module.exports = express();
 
 # Configuration
+bootstrapDir = "node_modules/bootstrap-styl/"
+publicDir = "#{__dirname}/public"
+assets = ["#{__dirname}/assets/css","#{__dirname}/assets/js", bootstrapDir]
 
-app.configure ->
-	app.set "views", "#{__dirname}/views"
-	app.set 'view engine', 'jade'
-	app.set 'view options', { layout: false }
+app.disable('x-powered-by');
+app.set "views", "#{__dirname}/views"
+app.set 'view engine', 'jade'
+app.set 'view options', { layout: false }
 
-	app.use express.bodyParser()
-	app.use express.methodOverride()
-	app.use app.router
-
-	publicDir = "#{__dirname}/public"
-	assetsDir = "#{__dirname}/assets"
-
-	app.use require('connect-assets') { src: assetsDir }
-	app.use express.static(publicDir)
-	return
+app.use bodyParser.urlencoded()
+app.use bodyParser.json()
+app.use methodOverride()
 
 
-app.configure 'development', ->
-	app.use express.errorHandler { dumpExceptions: true, showStack: true }
-	return
+app.use express.static(publicDir)
+
+if 'development' == app.get('env')
+	app.use connectAssets { paths: assets }
+	app.use errorHandler { dumpExceptions: true, showStack: true }
 
 
-app.configure 'production', ->
-	app.use express.errorHandler()
-	return
+if 'production' == app.get('env')
+	app.use connectAssets { paths: assets, build: true }
+	app.use errorHandler()

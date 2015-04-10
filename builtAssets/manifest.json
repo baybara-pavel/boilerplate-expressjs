@@ -1,0 +1,69 @@
+{
+  "assets": {
+    "base-layout.css": "base-layout-700b50200a807a7cfecfc8f90567bc82.css",
+    "common.css": "common-700b50200a807a7cfecfc8f90567bc82.css",
+    "index.css": "index-700b50200a807a7cfecfc8f90567bc82.css",
+    "index.js": "index-08b3d4e36caf0fd8570aee1dc4acb64e.js",
+    "Gruntfile.js": "Gruntfile-7c359e94d7986d937cf60e17fb333244.js",
+    "README.md": "README-193889144d34c1668ae09c14ce649b10.md",
+    "bootstrap.css": "bootstrap-700b50200a807a7cfecfc8f90567bc82.css",
+    "bower.json": "bower-e6bc758629c38f4667b6fa474de72780.json",
+    "package.json": "package-4277d8d7aa75eb1986479864959fb1a2.json"
+  },
+  "files": {
+    "base-layout-700b50200a807a7cfecfc8f90567bc82.css": {
+      "logical_path": "base-layout.css",
+      "mtime": "2015-04-06T21:35:39.000Z",
+      "size": 111793,
+      "digest": "700b50200a807a7cfecfc8f90567bc82"
+    },
+    "common-700b50200a807a7cfecfc8f90567bc82.css": {
+      "logical_path": "common.css",
+      "mtime": "2015-04-06T21:35:39.000Z",
+      "size": 111793,
+      "digest": "700b50200a807a7cfecfc8f90567bc82"
+    },
+    "index-700b50200a807a7cfecfc8f90567bc82.css": {
+      "logical_path": "index.css",
+      "mtime": "2015-04-06T21:35:39.000Z",
+      "size": 111793,
+      "digest": "700b50200a807a7cfecfc8f90567bc82"
+    },
+    "index-08b3d4e36caf0fd8570aee1dc4acb64e.js": {
+      "logical_path": "index.js",
+      "mtime": "2015-04-06T15:26:01.000Z",
+      "size": 0,
+      "digest": "08b3d4e36caf0fd8570aee1dc4acb64e"
+    },
+    "Gruntfile-7c359e94d7986d937cf60e17fb333244.js": {
+      "logical_path": "Gruntfile.js",
+      "mtime": "2014-12-17T23:26:38.000Z",
+      "size": 1463,
+      "digest": "7c359e94d7986d937cf60e17fb333244"
+    },
+    "README-193889144d34c1668ae09c14ce649b10.md": {
+      "logical_path": "README.md",
+      "mtime": "2015-03-18T01:37:33.000Z",
+      "size": 3837,
+      "digest": "193889144d34c1668ae09c14ce649b10"
+    },
+    "bootstrap-700b50200a807a7cfecfc8f90567bc82.css": {
+      "logical_path": "bootstrap.css",
+      "mtime": "2015-03-18T01:37:33.000Z",
+      "size": 111793,
+      "digest": "700b50200a807a7cfecfc8f90567bc82"
+    },
+    "bower-e6bc758629c38f4667b6fa474de72780.json": {
+      "logical_path": "bower.json",
+      "mtime": "2015-03-18T01:39:03.000Z",
+      "size": 217,
+      "digest": "e6bc758629c38f4667b6fa474de72780"
+    },
+    "package-4277d8d7aa75eb1986479864959fb1a2.json": {
+      "logical_path": "package.json",
+      "mtime": "2015-04-06T16:49:49.000Z",
+      "size": 1438,
+      "digest": "4277d8d7aa75eb1986479864959fb1a2"
+    }
+  }
+}
